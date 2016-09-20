@@ -13,7 +13,7 @@ input_port = raw_input(u'Informe a porta em que o Odoo rodara: ')
 input_port_s = raw_input(u'Porta Segura. Dica: Acrescente apenas 1 ao numero da porta que escolheu anteriormente: ')
 
 content = base_content.replace('input_name', input_name).replace('input_database', input_database).replace('input_password', input_password)
-content = content.replace('input_admin_password', input_admin_password).replace('input_port', input_port).replace('input_port_s', input_port_s)
+content = content.replace('input_admin_password', input_admin_password).replace('input_port_s', input_port_s).replace('input_port', input_port)
 f = open('{}{}{}.conf'.format(base_path, 'conf/', input_name), 'w+')
 f.write(content)
 f.close()
