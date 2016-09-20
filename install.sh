@@ -2,6 +2,7 @@
 #############################################
 # MINI SERVIDOR PARA CONTROLE ###############
 # ARQUIVO DE INSTALAÇÃO #####################
+# PARA UBUNTU ###############################
 #############################################
 # Init
 FILE="/tmp/out.$$"
@@ -23,6 +24,20 @@ apt-get install python-pip
 #psycopg2 and others with pip problems
 apt-get install python-psycopg2
 apt-get install python-ldap
+#pyxmlsec for pysped
+apt-get install openssl
+apt-get install python-openssl
+apt-get install python-libxml2
+apt-get install libxmlsec1-dev
+apt-get install libxml-security-c-dev
+apt-get install xmlsec1
+cd /tmp
+wget labs.libre-entreprise.org/frs/download.php/897/pyxmlsec-0.3.1.tar.gz
+tar -zxvf pyxmlsec-0.3.1.tar.gz
+cd pyxmlsec-0.3.1/
+./setup.py install
+pip install pysped
+#End pysped
 #install locales
 apt-get install locales
 #install locale pt-br
