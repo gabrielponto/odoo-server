@@ -8,7 +8,7 @@ base.close()
 input_name = raw_input(u'Informe o nome base. Eg: Sera usado para chamar o script run e stop: ')
 input_database = raw_input(u'Informe o nome do usuario da base de dados: ')
 input_password = raw_input(u'Informe a senha para o banco de dados: ')
-input_admin_password = raw_input(u'Informe a senha de administracao da gerência de banco de dados do Odoo: ')
+input_admin_password = raw_input(u'Informe a senha de administracao da gerencia de banco de dados do Odoo: ')
 input_port = raw_input(u'Informe a porta em que o Odoo rodara: ')
 input_port_s = raw_input(u'Porta Segura. Dica: Acrescente apenas 1 ao numero da porta que escolheu anteriormente: ')
 
