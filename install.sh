@@ -35,8 +35,12 @@ cd /tmp
 wget labs.libre-entreprise.org/frs/download.php/897/pyxmlsec-0.3.1.tar.gz
 tar -zxvf pyxmlsec-0.3.1.tar.gz
 cd pyxmlsec-0.3.1/
-./setup.py install
-pip install pysped
+python setup.py install
+#specific version pysped
+cd /tmp
+git clone https://github.com/gabrielponto/PySPED
+cd PySPED/
+python setup.py install
 #End pysped
 #install locales
 apt-get install locales
@@ -62,6 +66,11 @@ git clone https://github.com/gabrielponto/odoo-brazil-eletronic-documents --bran
 git clone https://github.com/OCA/bank-payment.git --branch 8.0
 git clone https://github.com/odoo-brazil/odoo-brazil-banking.git --branch 8.0
 git clone https://github.com/OCA/server-tools.git --branch 8.0
+
+#install odoo-server
+cd /home/odoo
+git clone https://github.com/gabrielponto/odoo-server.git
+
 HERE
 echo 'SUCCESS! Create a database user and a config file'
 
