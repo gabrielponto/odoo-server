@@ -1,4 +1,5 @@
 #!/bin/bash
+
 if [ -z $1 ]; then
         echo "Informe o nome da instancia"
         exit
