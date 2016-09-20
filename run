@@ -1,0 +1,7 @@
+#!/bin/bash
+if [ -z $1 ]; then
+        echo "Informe o nome da instancia"
+        exit
+fi
+/home/odoo/odoo/openerp-server -c /home/odoo/odoo-enabled/$1.conf &
+echo "$!" > /home/odoo/pids/odoo-$1.pid
