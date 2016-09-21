@@ -48,7 +48,7 @@ apt-get --assume-yes install locales
 locale-gen pt_BR
 locale-gen pt_BR.UTF-8
 
-pip install -r requiriments.txt
+pip install -r /tmp/odoo-server/requiriments.txt
 
 su odoo <<HERE
 cd /home/odoo
