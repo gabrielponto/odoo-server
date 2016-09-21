@@ -17,20 +17,20 @@ fi
 #try add user if not exists
 adduser --disabled-password --gecos "" odoo
 
-
+apt-get --assume-yes install git
 #install postgres
-apt-get install postgresql
-apt-get install python-pip
+apt-get --assume-yes install postgresql
+apt-get --assume-yes install python-pip
 #psycopg2 and others with pip problems
-apt-get install python-psycopg2
-apt-get install python-ldap
+apt-get --assume-yes install python-psycopg2
+apt-get --assume-yes install python-ldap
 #pyxmlsec for pysped
-apt-get install openssl
-apt-get install python-openssl
-apt-get install python-libxml2
-apt-get install libxmlsec1-dev
-apt-get install libxml-security-c-dev
-apt-get install xmlsec1
+apt-get --assume-yes install openssl
+apt-get --assume-yes install python-openssl
+apt-get --assume-yes install python-libxml2
+apt-get --assume-yes install libxmlsec1-dev
+apt-get --assume-yes install libxml-security-c-dev
+apt-get --assume-yes install xmlsec1
 cd /tmp
 wget labs.libre-entreprise.org/frs/download.php/897/pyxmlsec-0.3.1.tar.gz
 tar -zxvf pyxmlsec-0.3.1.tar.gz
@@ -43,7 +43,7 @@ cd PySPED/
 python setup.py install
 #End pysped
 #install locales
-apt-get install locales
+apt-get --assume-yes install locales
 #install locale pt-br
 locale-gen pt_BR
 locale-gen pt_BR.UTF-8
