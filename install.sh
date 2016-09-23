@@ -20,6 +20,7 @@ adduser --disabled-password --gecos "" odoo
 apt-get --assume-yes install git
 #install postgres
 apt-get --assume-yes install postgresql
+apt-get --assume-yes install python-dev
 apt-get --assume-yes install python-pip
 #psycopg2 and others with pip problems
 apt-get --assume-yes install python-psycopg2
@@ -52,8 +53,8 @@ pip install -r /tmp/odoo-server/requiriments.txt
 
 su odoo <<HERE
 cd /home/odoo
-#odoo
-git clone https://github.com/odoo/odoo --branch 8.0
+#odoo get only latest release with --depth=1
+git clone https://github.com/odoo/odoo.git --branch 8.0 --depth=1
 
 #Localização brasileira
 mkdir addons
