@@ -39,7 +39,7 @@ cd pyxmlsec-0.3.1/
 python setup.py install
 #specific version pysped
 cd /tmp
-git clone https://github.com/gabrielponto/PySPED
+git clone https://github.com/gabrielponto/PySPED --depth=1
 cd PySPED/
 python setup.py install
 #End pysped
@@ -61,16 +61,16 @@ mkdir addons
 mkdir pids
 mkdir logs
 cd addons
-git clone https://github.com/OCA/account-payment.git --branch 8.0
-git clone https://github.com/OCA/l10n-brazil.git --branch 8.0
-git clone https://github.com/gabrielponto/odoo-brazil-eletronic-documents --branch 8.0
-git clone https://github.com/OCA/bank-payment.git --branch 8.0
-git clone https://github.com/odoo-brazil/odoo-brazil-banking.git --branch 8.0
-git clone https://github.com/OCA/server-tools.git --branch 8.0
+git clone https://github.com/OCA/account-payment.git --branch 8.0 --depth=1
+git clone https://github.com/OCA/l10n-brazil.git --branch 8.0 --depth=1
+git clone https://github.com/gabrielponto/odoo-brazil-eletronic-documents --branch 8.0 --depth=1
+git clone https://github.com/OCA/bank-payment.git --branch 8.0 --depth=1
+git clone https://github.com/odoo-brazil/odoo-brazil-banking.git --branch 8.0 --depth=1
+git clone https://github.com/OCA/server-tools.git --branch 8.0 --depth=1
 
 #install odoo-server
 cd /home/odoo
-git clone https://github.com/gabrielponto/odoo-server.git
+git clone https://github.com/gabrielponto/odoo-server.git --depth=1
 
 HERE
 echo 'SUCCESS! Create a database user and a config file'
