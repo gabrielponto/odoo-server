@@ -21,6 +21,8 @@ apt-get --assume-yes install git
 #install postgres
 apt-get --assume-yes install postgresql
 apt-get --assume-yes install python-dev
+# for Pillow
+apt-get --assume-yes install libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
 apt-get --assume-yes install python-pip
 #psycopg2 and others with pip problems
 apt-get --assume-yes install python-psycopg2
@@ -60,6 +62,7 @@ git clone https://github.com/odoo/odoo.git --branch 8.0 --depth=1
 mkdir addons
 mkdir pids
 mkdir logs
+mkdir conf
 cd addons
 git clone https://github.com/OCA/account-payment.git --branch 8.0 --depth=1
 git clone https://github.com/OCA/l10n-brazil.git --branch 8.0 --depth=1
@@ -67,6 +70,8 @@ git clone https://github.com/gabrielponto/odoo-brazil-eletronic-documents --bran
 git clone https://github.com/OCA/bank-payment.git --branch 8.0 --depth=1
 git clone https://github.com/odoo-brazil/odoo-brazil-banking.git --branch 8.0 --depth=1
 git clone https://github.com/OCA/server-tools.git --branch 8.0 --depth=1
+git clone https://github.com/OCA/account-fiscal-rule --branch 8.0 --depth=1
+git clone https://github.com/OCA/bank-statement-reconcile.git --branch 8.0 --depth=1
 
 #install odoo-server
 cd /home/odoo
