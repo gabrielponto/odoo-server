@@ -52,6 +52,7 @@ locale-gen pt_BR
 locale-gen pt_BR.UTF-8
 
 pip install -r /tmp/odoo-server/requiriments.txt
+pip install git+https://github.com/gabrielponto/pyboleto.git
 
 su odoo <<HERE
 cd /home/odoo
@@ -68,7 +69,7 @@ git clone https://github.com/OCA/account-payment.git --branch 8.0 --depth=1
 git clone https://github.com/OCA/l10n-brazil.git --branch 8.0 --depth=1
 git clone https://github.com/gabrielponto/odoo-brazil-eletronic-documents --branch 8.0 --depth=1
 git clone https://github.com/OCA/bank-payment.git --branch 8.0 --depth=1
-git clone https://github.com/odoo-brazil/odoo-brazil-banking.git --branch 8.0 --depth=1
+git clone https://github.com/gabrielponto/odoo-brazil-banking.git --branch 8.0 --depth=1
 git clone https://github.com/OCA/server-tools.git --branch 8.0 --depth=1
 git clone https://github.com/OCA/account-fiscal-rule --branch 8.0 --depth=1
 git clone https://github.com/OCA/bank-statement-reconcile.git --branch 8.0 --depth=1
